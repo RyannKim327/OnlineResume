@@ -1,0 +1,67 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  outline: none;
+}
+
+body {
+  background-color: #131320;
+}
+
+body > div {
+  background-image: linear-gradient(to bottom, #131320, #595962);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  padding: 3rem;
+  border-radius: 0.25rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+div > section {
+  background-color: #fafbfc;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+#personalInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  margin-right: 0.05rem;
+  padding: 2rem 0;
+}
+
+#personalInformation > .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+#personalInformation > .contacts > ul > li {
+  list-style: none;
+}
+
+#personalInformation > .contact > ul > li > span {
+  margin-left: 0.15rem;
+}
+
+#timeline {
+  width: 70%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  margin-left: 0.05rem;
+}
