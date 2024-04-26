@@ -1,11 +1,12 @@
 @import "https://www.nerdfonts.com/assets/css/webfont.css";
-
+@import "https://fonts.googleapis.com/css2?family=Josefin+Sans";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   user-select: none;
   outline: none;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 body {
@@ -37,11 +38,11 @@ div > section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 30%;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   margin-right: 0.05rem;
   padding: 2rem 0;
+  width: 30%;
 }
 
 #personalInformation > .header {
@@ -51,12 +52,21 @@ div > section {
   padding: 1rem;
 }
 
+#personalInformation > .header > img {
+  border-radius: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 #personalInformation > .contacts > ul > li {
   list-style: none;
 }
 
+#personalInformation > .contacts > ul > li:nth-child(even) {
+  margin: 0.75rem 0;
+}
+
 #personalInformation > .contact > ul > li > span {
-  margin-left: 0.15rem;
+  margin-left: 0.5rem;
 }
 
 #timeline {
