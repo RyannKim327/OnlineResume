@@ -1,5 +1,8 @@
-@import "https://www.nerdfonts.com/assets/css/webfont.css";
-@import "https://fonts.googleapis.com/css2?family=Josefin+Sans";
+@import url("https://www.nerdfonts.com/assets/css/webfont.css");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display");
+
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +42,7 @@ div > section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   margin-right: 0.05rem;
@@ -92,8 +95,56 @@ div > section {
 }
 
 #timeline {
+  display: flex;
+  flex-direction: column;
   width: 70%;
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   margin-left: 0.05rem;
+}
+
+#timeline > h3 {
+  margin: 1rem;
+}
+
+#timeline > table {
+  margin: 1rem 0;
+  border-spacing: 0;
+}
+
+#timeline > table th {
+  font-weight: bolder;
+}
+
+#timeline > table th {
+  font-family: "Noto Serif Display", serif;
+  font-size: 1.5rem;
+  vertical-align: top;
+}
+
+#timeline > table th.year {
+  text-align: right;
+  padding: 0 0.5rem;
+  font-family: "IBM Plex Mono", monospace;
+  border: 0;
+}
+
+#timeline > table th.year::after {
+  content: "•";
+  margin-right: -1.15rem;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+#timeline > table th:not(.year),
+#timeline > table th,
+#timeline > table td {
+  text-align: left;
+  border-left: 2px black solid;
+  padding: 0.25rem 1rem;
+}
+
+#timeline > table .gap::before {
+  content: "hello world";
+  color: transparent;
 }
