@@ -11,6 +11,7 @@
 
 body {
   background-color: #131320;
+  overflow-x: hidden;
 }
 
 body > div {
@@ -23,6 +24,7 @@ body > div {
   width: 100vw;
   display: flex;
   flex-direction: row;
+  overflow-x: hidden;
 }
 
 div > section {
@@ -50,6 +52,7 @@ div > section {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 #personalInformation > .header > img {
@@ -57,15 +60,34 @@ div > section {
   padding-bottom: 0.5rem;
 }
 
-#personalInformation > .contacts > ul > li {
+#personalInformation > .elements {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+}
+
+#personalInformation > .elements > h3 {
+  display: block;
+  margin: 1.5rem 0;
+  text-decoration: underline;
+  text-align: left;
+  padding: 0 1.5rem;
+}
+
+#personalInformation > .elements > ul {
+  align-self: center;
+}
+
+#personalInformation > .elements > ul > li {
   list-style: none;
 }
 
-#personalInformation > .contacts > ul > li:nth-child(even) {
+#personalInformation > .elements > ul > li:nth-child(even) {
   margin: 0.75rem 0;
 }
 
-#personalInformation > .contact > ul > li > span {
+#personalInformation > .elements > ul > li > span {
   margin-left: 0.5rem;
 }
 
