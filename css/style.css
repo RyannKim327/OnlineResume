@@ -27,7 +27,6 @@ body > div {
   width: 100vw;
   display: flex;
   flex-direction: row;
-  overflow-x: hidden;
 }
 
 div > section {
@@ -94,6 +93,13 @@ div > section {
   margin-left: 0.5rem;
 }
 
+#personalInformation > .elements > ul > p {
+  font-family: "IBX Plex Mono", monospace;
+  font-size: 0.75rem;
+  padding: 0.75rem;
+  padding-bottom: 1.5rem;
+}
+
 #timeline {
   display: flex;
   flex-direction: column;
@@ -131,7 +137,7 @@ div > section {
 
 #timeline > table th.year::after {
   content: "•";
-  margin-right: -1.15rem;
+  margin-right: -1.1rem;
   font-size: 2rem;
   padding-left: 1rem;
 }
@@ -147,4 +153,45 @@ div > section {
 #timeline > table .gap::before {
   content: "hello world";
   color: transparent;
+}
+
+/* Scroll */
+
+::-webkit-scrollbar {
+  border-radius: 1rem;
+  background-color: white;
+  width: 0.25rem;
+  padding: 0.25rem;
+}
+
+::webkit-scrollbar-track {
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #333333;
+}
+
+/* Tablet Mode */
+
+@media only screen and (max-width: 1000px) {
+  body > div {
+    display: flex;
+    flex-direction: column;
+  }
+  div :is(#personalInformation, #timeline) {
+    width: 100%;
+    margin: 0.05rem 0;
+  }
+  #personalInformation {
+    border-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  #timeline {
+    border-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
 }

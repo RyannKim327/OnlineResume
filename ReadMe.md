@@ -7,4 +7,9 @@
 
 ---
 ### Resources
-1. https://www.nerdfonts.com/#
+1. https://www.nerdfonts.com/
+2. https://fonts.google.com/
+
+---
+### More Information
+> Most of the information in this repository are hidden, not until the submission of the project.
