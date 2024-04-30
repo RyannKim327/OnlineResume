@@ -79,6 +79,7 @@ div > section {
 
 #personalInformation > .elements > ul {
   align-self: center;
+  margin: 0 3rem;
 }
 
 #personalInformation > .elements > ul > li {
@@ -200,12 +201,14 @@ div > section {
 
 /* Only Tablet */
 
-@media only screen and (max-width: 1000px) and (min-width: 540px) {
-  #personalInformation > .elements > ul {
+/*@media only screen and (max-width: 1000px) and (min-width: 540px) {
+  #personalInformation > .elements > ul,
+  #personalInformation > .elements > ul > li {
     align-self: flex-start;
     margin-left: 3rem;
+    color: red;
   }
-}
+}*/
 
 @media only screen and (max-width: 540px) {
   table th {
