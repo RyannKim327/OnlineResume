@@ -4,200 +4,214 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display");
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	user-select: none;
-	outline: none;
-	font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 body {
-	background-color: #131320;
-	overflow-x: hidden;
+  background-color: #131320;
+  overflow-x: hidden;
 }
 
 body > div {
-	background-image: linear-gradient(to bottom, #131320, #595962);
-	background-repeat: no-repeat;
-	background-position: fixed;
-	background-size: cover;
-	padding: 3rem;
-	border-radius: 0.25rem;
-	width: 100vw;
-	display: flex;
-	flex-direction: row;
+  background-image: linear-gradient(to bottom, #131320, #595962);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  padding: 3rem;
+  border-radius: 0.25rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
 }
 
 div > section {
-	background-color: #fafbfc;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	padding: 0.5rem;
+  background-color: #fafbfc;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0.5rem;
 }
 
 #personalInformation {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: top;
-	border-top-left-radius: 0.5rem;
-	border-bottom-left-radius: 0.5rem;
-	margin-right: 0.05rem;
-	padding: 2rem 0;
-	width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  margin-right: 0.05rem;
+  padding: 2rem 0;
+  width: 30%;
 }
 
 #personalInformation > .header {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 1rem;
-	margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 #personalInformation > .header > img {
-	border-radius: 0.5rem;
-	padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 #personalInformation > .elements {
-	display: flex;
-	flex-direction: column;
-	align-items: left;
-	width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
 }
 
 #personalInformation > .elements > h3 {
-	display: block;
-	margin: 1.5rem 0;
-	text-decoration: underline;
-	text-align: left;
-	padding: 0 1.5rem;
+  display: block;
+  margin: 1.5rem 0;
+  text-decoration: underline;
+  text-align: left;
+  padding: 0 1.5rem;
 }
 
 #personalInformation > .elements > ul {
-	align-self: center;
+  align-self: center;
 }
 
 #personalInformation > .elements > ul > li {
-	list-style: none;
+  list-style: none;
+  word-wrap: break-word;
 }
 
 #personalInformation > .elements > ul > li:nth-child(even) {
-	margin: 0.75rem 0;
+  margin: 0.75rem 0;
 }
 
 #personalInformation > .elements > ul > li > span {
-	margin-left: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 #personalInformation > .elements > ul > p {
-	font-family: "IBX Plex Mono", monospace;
-	font-size: 0.75rem;
-	padding: 0.75rem;
-	padding-bottom: 1.5rem;
+  font-family: "IBX Plex Mono", monospace;
+  font-size: 0.75rem;
+  padding: 0.75rem;
+  padding-bottom: 1.5rem;
 }
 
 #timeline {
-	display: flex;
-	flex-direction: column;
-	width: 70%;
-	border-top-right-radius: 0.5rem;
-	border-bottom-right-radius: 0.5rem;
-	margin-left: 0.05rem;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  margin-left: 0.05rem;
 }
 
 #timeline > h3 {
-	margin: 1rem;
+  margin: 1rem;
 }
 
 #timeline > table {
-	margin: 1rem 0;
-	border-spacing: 0;
+  margin: 1rem 0;
+  border-spacing: 0;
 }
 
 #timeline > table th {
-	font-weight: bolder;
+  font-weight: bolder;
 }
 
 #timeline > table th {
-	font-family: "Noto Serif Display", serif;
-	font-size: 1.5rem;
-	vertical-align: top;
+  font-family: "Noto Serif Display", serif;
+  font-size: 1.5rem;
+  vertical-align: top;
 }
 
 #timeline > table th.year {
-	text-align: right;
-	padding: 0 0.5rem;
-	font-family: "IBM Plex Mono", monospace;
-	border: 0;
+  text-align: right;
+  padding: 0 0.5rem;
+  font-family: "IBM Plex Mono", monospace;
+  border: 0;
 }
 
 #timeline > table th.year::after {
-	content: "•";
-	margin-right: -1.1rem;
-	font-size: 2rem;
-	padding-left: 1rem;
+  content: "•";
+  margin-right: -1.1rem;
+  font-size: 2rem;
+  padding-left: 1rem;
 }
 
 #timeline > table th:not(.year),
 #timeline > table th,
 #timeline > table td {
-	text-align: left;
-	border-left: 2px black solid;
-	padding: 0.25rem 1rem;
+  text-align: left;
+  border-left: 2px black solid;
+  padding: 0.25rem 1rem;
+  word-wrap: break-word;
 }
 
 #timeline > table .gap::before {
-	content: "hello world";
-	color: transparent;
+  content: "hello world";
+  color: transparent;
 }
 
 /* Scroll */
 
 ::-webkit-scrollbar {
-	border-radius: 1rem;
-	background-color: white;
-	width: 0.25rem;
-	padding: 0.25rem;
+  border-radius: 1rem;
+  background-color: white;
+  width: 0.25rem;
+  padding: 0.25rem;
 }
 
 ::webkit-scrollbar-track {
-	border-radius: 1rem;
+  border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb {
-	border-radius: 1rem;
-	background-color: #333333;
+  border-radius: 1rem;
+  background-color: #333333;
 }
 
-/* Tablet Mode */
+/* Tablet Mode below */
 
-@media only screen and (max-width: 1000px){
-	body > div {
-		display: flex;
-		flex-direction: column;
-	}
-	div :is(#personalInformation, #timeline) {
-		width: 100%;
-		margin: 0.05rem 0;
-	}
-	#personalInformation {
-		border-radius: 0;
-		border-top-left-radius: 0.5rem;
-		border-top-right-radius: 0.5rem;
-	}
-	#timeline {
-		border-radius: 0;
-		border-bottom-left-radius: 0.5rem;
-		border-bottom-right-radius: 0.5rem;
-	}
+@media only screen and (max-width: 1000px) {
+  body > div {
+    display: flex;
+    flex-direction: column;
+  }
+  div :is(#personalInformation, #timeline) {
+    width: 100%;
+    margin: 0.05rem 0;
+  }
+  #personalInformation {
+    border-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  #timeline {
+    border-radius: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
 }
+
+/* Only Tablet */
+
 @media only screen and (max-width: 1000px) and (min-width: 540px) {
-	#personalInformation > .elements > ul {
-		align-self: flex-start;
-		margin-left: 2.75rem;
-	}
+  #personalInformation > .elements > ul {
+    align-self: flex-start;
+    margin-left: 3rem;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  table th {
+    font-size: 0.75rem;
+  }
+  #table td {
+    font-size: 0.5rem;
+  }
 }
