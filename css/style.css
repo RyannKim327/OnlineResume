@@ -201,16 +201,16 @@ div > section {
 
 /* Only Tablet */
 
-/*@media only screen and (max-width: 1000px) and (min-width: 540px) {
-  #personalInformation > .elements > ul,
-  #personalInformation > .elements > ul > li {
-    align-self: flex-start;
-    margin-left: 3rem;
-    color: red;
+@media only screen and (max-width: 1000px) and (min-width: 540px) {
+  body > div {
+    padding: 2rem;
   }
-}*/
+}
 
 @media only screen and (max-width: 540px) {
+  body > div {
+    padding: 1rem;
+  }
   table th {
     font-size: 0.75rem;
   }
