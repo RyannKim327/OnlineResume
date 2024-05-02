@@ -138,12 +138,13 @@ div > section {
   padding-right: 0.5rem;
 }
 
-/*#timeline > table th.year::after {
+#timeline > table th:not(.year)::before {
   content: "•";
-  margin-right: -1.1rem;
+  position: relative;
   font-size: 2rem;
-  padding-left: 1rem;
-}*/
+  margin-left: -2.5rem;
+  padding: 1rem;
+}
 
 #timeline > table th:not(.year),
 #timeline > table td {
