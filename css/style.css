@@ -132,20 +132,20 @@ div > section {
 
 #timeline > table th.year {
   text-align: right;
-  padding: 0 0.5rem;
+  /* padding: 0 0.5rem; */
   font-family: "IBM Plex Mono", monospace;
   border: 0;
+  padding-right: 0.5rem;
 }
 
-#timeline > table th.year::after {
+/*#timeline > table th.year::after {
   content: "•";
   margin-right: -1.1rem;
   font-size: 2rem;
   padding-left: 1rem;
-}
+}*/
 
 #timeline > table th:not(.year),
-#timeline > table th,
 #timeline > table td {
   text-align: left;
   border-left: 2px black solid;
